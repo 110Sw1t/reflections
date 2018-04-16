@@ -1,0 +1,44 @@
+important commands
+
+HEAD vs master
+head pointer to the commit that is checked out right now while master is just the end of a branch
+head can be pointing to same commit as master but not at all times 
+
+
+git log
+Reasoning: if you wanna see all past commits with their author, description(maybe hints a probable buggy commit)
+retrieve working commit id to checkout then git diff to fix bugs with current version "master(no id required just write master)"
+
+git diff commit1id commit2id
+Reasoning in case u want to see how new bug was introduced 
+
+git clone
+Reasoning: clones current version and all history
+
+git checkout
+Reasoning: try older version of project(older version of all files (files are semantically related(sometimes))) 
+notes: use git checkout master to go back to where u left off
+
+git commit
+commit is a new version of a logical change, should have a description describing that change
+
+commit-size
+A good rule of thumb is to make one commit per logical change. 
+For example, if you fixed a typo, then fixed a bug in a separate part of the file, 
+you should use one commit for each change since they are logically separate. 
+If you do this, each commit will have one purpose that can be easily understood. 
+Git allows you to write a short message explaining what was changed in each commit, 
+and that message will be more useful if each commit has a single logical change.
+
+not too big to browse one file changes, not too small to browse all commits (smaller commits = more commits)
+when coding mage logically related changes together
+
+git add (add files from working directory to staging area to be comitted to the local repository)
+(done before each git commit and this is logical for the reasoning)
+Reasoning: commit only what has been added
+scenario: working on two features one has been done other is emi done, want to commit 
+working software then git add and commit that file only
+
+
+Git status 
+Reasoning: compares the staging area and the working directory with the most recent commit (HEAD), and tells us what changes we've made.
