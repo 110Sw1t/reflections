@@ -1,4 +1,4 @@
-important commands
+22important commands
 
 HEAD vs master
 head pointer to the commit that is checked out right now while master is just the end of a branch
@@ -18,7 +18,7 @@ Reasoning: clones current version and all history
 git checkout
 Reasoning: try older version of project(older version of all files (files are semantically related(sometimes))) 
 notes: use git checkout master to go back to where u left off
-
+,mnjdwq
 git commit
 commit is a new version of a logical change, should have a description describing that change
 
